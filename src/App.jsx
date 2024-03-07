@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="flex justify-center h-screen bg-purple-500 App 00">
       <Routes>
-        <Route path="/" element={<LobbyScreen />} />
-        <Route path="/room/:roomId" element={<RoomPage />} />
+        <Route exact path="/" element={<LobbyScreen />} />
+        <Route exact path="/room/:roomId" element={<RoomPage />} />
       </Routes>
     </div>
   );
